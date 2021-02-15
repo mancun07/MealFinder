@@ -1,0 +1,43 @@
+#search-form {
+  display: inline-block;
+}
+
+.meals-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+
+  .meal-item {
+    cursor: pointer;
+    border: 4px solid #fff;
+    position: relative;
+  }
+
+  .meal-title {
+    position: absolute;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+
+  .meal-item:hover .meal-title {
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+  }
+}
+
+.fas {
+  color: $lightColor;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  margin: 2px;
+}

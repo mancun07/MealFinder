@@ -1,0 +1,16 @@
+$primaryColor: maroon;
+$blueColor: steelblue;
+$lightColor: #ffffff;
+$semiLightColor: #eef6f7;
+$mediumColor: #a7a7a7;
+$darkColor: #000000;
+$semiDarkColor: #0f2022;
+$transparentColor: transparent;
+
+@function set-text-color($backgroundColor) {
+  @if (lightness($backgroundColor) > 50) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
