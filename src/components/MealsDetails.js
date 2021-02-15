@@ -4,10 +4,7 @@ import { MealsContext } from '../context/MealsContext';
 
 const MealsDetails = (props) => {
     const {fetchSingleMeal, meal} = useContext(MealsContext);
-    console.log(props)
     const {id} = useParams('id');
-    console.log(id)
-    console.log(meal)
     useEffect(() => {
         fetchSingleMeal(id);
     }, [])
@@ -25,7 +22,7 @@ const MealsDetails = (props) => {
 
     return (
         <div class="single-meal my-4">
-            <Link to={'/'} className="back btn btn-circle bg-dark inline-block my-4">Назад к результатам поиска</Link><br/>
+            <Link to={'/MealFinder'} className="back btn btn-circle bg-dark inline-block my-4">Назад к результатам поиска</Link><br/>
             <img src={meal.strMealThumb}/>
             <h1>{meal.strMeal}</h1>
             <div class="meal-category">
