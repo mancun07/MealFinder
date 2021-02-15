@@ -5,7 +5,7 @@ const MealsItem = ({meal}) => {
     console.log(meal.strMeal)
     console.log('works')
     return (
-        <Link to={`/meals/${meal.idMeal}`} class="meal-item">
+        <Link to={`/MealFinder/meals/${meal.idMeal}`} class="meal-item">
                 <img src={meal.strMealThumb}/>
                 <div class="meal-title">
                     <h3>{meal.strMeal}</h3>
