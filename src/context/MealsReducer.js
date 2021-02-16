@@ -21,6 +21,12 @@ const MealsReducer = (state, action) => {
             loading: true
 
         }
+
+        case 'CLEAR_MEALS':
+        return {
+            ...state,
+            meals: []
+        }
         
         default: 
         return state

@@ -17,12 +17,12 @@ const MealsDetails = (props) => {
             ingredients.push(`${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`)
         }
     }
-    console.log(ingredients)
+    
 
 
     return (
         <div class="single-meal my-4">
-            <Link to={'/MealFinder'} className="back btn btn-circle bg-dark inline-block my-4">Назад к результатам поиска</Link><br/>
+            <Link to={'/'} className="back btn btn-circle bg-dark inline-block my-4">Назад к результатам поиска</Link><br/>
             <img src={meal.strMealThumb}/>
             <h1>{meal.strMeal}</h1>
             <div class="meal-category">

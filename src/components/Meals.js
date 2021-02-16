@@ -1,16 +1,18 @@
 import React, {useContext} from 'react';
 import { MealsContext } from '../context/MealsContext';
+import ClearButton from './ClearButton';
 import MealsItem from './MealsItem';
 import Preloader from './Preloader';
 import SearchResult from './SearchResult';
 
 const Meals = () => {
-    const {meals} = useContext(MealsContext);
+    const {meals, clearMeals} = useContext(MealsContext);
     console.log(meals)
 
 
     return (
         <>
+        {meals && meals.length > 0 && <ClearButton/>}
         {meals && meals.length > 0 && <SearchResult text={'The result found are as follows:'}/>}
         {!meals && <SearchResult text={'No any info matching to your request. Please, change your request...'}/>      
         }

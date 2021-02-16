@@ -41,6 +41,11 @@ const setLoading = () => {
     dispatch({type: 'SET_LOADING'})
 }
 
+const clearMeals = () => {
+    console.log('works')
+    dispatch({type: 'CLEAR_MEALS'})
+}
+
 
     return (
         <MealsContext.Provider value={{
@@ -49,7 +54,8 @@ const setLoading = () => {
             meal: state.meal,
             fetchMeals,
             setLoading,
-            fetchSingleMeal
+            fetchSingleMeal,
+            clearMeals
         }}>
             {props.children}
         </MealsContext.Provider>
