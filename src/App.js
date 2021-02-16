@@ -11,8 +11,8 @@ const App = () => {
           <div className="container">
             <Switch>
               <Route exact path={'/MealFinder'} component={Home}/>
-              <Route path={'/meals/:id'} component={MealsDetails}/>
-              <Route path={'*'} component={NotFound}/>
+              <Route exact path={'/meals/:id'} component={MealsDetails}/>
+              <Route component={NotFound}/>
             </Switch>
           </div>
         </Router>
