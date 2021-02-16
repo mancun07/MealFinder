@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/MealFinder/static/css/main.91446b4a.chunk.css",
-    "main.js": "/MealFinder/static/js/main.9e5b9620.chunk.js",
-    "main.js.map": "/MealFinder/static/js/main.9e5b9620.chunk.js.map",
+    "main.js": "/MealFinder/static/js/main.adbe39b9.chunk.js",
+    "main.js.map": "/MealFinder/static/js/main.adbe39b9.chunk.js.map",
     "runtime-main.js": "/MealFinder/static/js/runtime-main.4ddb167b.js",
     "runtime-main.js.map": "/MealFinder/static/js/runtime-main.4ddb167b.js.map",
     "static/js/2.fd531d20.chunk.js": "/MealFinder/static/js/2.fd531d20.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4ddb167b.js",
     "static/js/2.fd531d20.chunk.js",
     "static/css/main.91446b4a.chunk.css",
-    "static/js/main.9e5b9620.chunk.js"
+    "static/js/main.adbe39b9.chunk.js"
   ]
 }
