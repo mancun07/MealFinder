@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const MealsItem = ({meal}) => {
     return (
-        <Link to={`MealFinder/meals/${meal.idMeal}`} class="meal-item">
+        <Link to={`/meals/${meal.idMeal}`} class="meal-item">
                 <img src={meal.strMealThumb}/>
                 <div class="meal-title">
                     <h3>{meal.strMeal}</h3>
